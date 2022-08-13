@@ -5,7 +5,9 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01Autocomplete", "01Autocomplete\01Autocomplete.csproj", "{CD32B4C6-B8CF-4225-BC0E-B198A402E23D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02FilesStorage", "02FilesStorage\02FilesStorage.csproj", "{557E7764-AB98-4014-8345-47BEDF1A8703}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02FilesStorage", "02FilesStorage\02FilesStorage.csproj", "{557E7764-AB98-4014-8345-47BEDF1A8703}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03PreviewForPdfs", "03PreviewForPdfs\03PreviewForPdfs.csproj", "{FC933A60-5A51-4069-86C7-81995531F383}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{557E7764-AB98-4014-8345-47BEDF1A8703}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{557E7764-AB98-4014-8345-47BEDF1A8703}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{557E7764-AB98-4014-8345-47BEDF1A8703}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC933A60-5A51-4069-86C7-81995531F383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC933A60-5A51-4069-86C7-81995531F383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC933A60-5A51-4069-86C7-81995531F383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC933A60-5A51-4069-86C7-81995531F383}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
