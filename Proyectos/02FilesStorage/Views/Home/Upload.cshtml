@@ -1,0 +1,39 @@
+﻿@model FileServer
+
+@{
+    ViewData["Title"] = "Subir un archivo";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card col-12">
+            <div class="card-header bg-primary">
+                <h4 class="text-center">Cargar un archivo</h4>
+            </div>
+            
+            <div class="card-body">
+                <form asp-action="Upload" asp-controller="Home" enctype="multipart/form-data" method="post">
+                    <div asp-validation-summary="ModelOnly"></div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Nombre: </label>
+                        <input type="text" class="form-control" placeholder="Nombre..." name="name" autocomplete="off"/>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Archivo: </label>
+                        <input type="file" class="form-control" placeholder="Archivo..." name="fileDB"/>
+                    </div>
+
+                    <button class="col-4 offset-2 btn btn-success" type="submit">
+                        Subir Archivo
+                    </button>
+
+                    <a asp-action="Index" asp-controller="Home" class="col-4 btn btn-secondary">
+                        Cancelar
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
