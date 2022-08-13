@@ -1,0 +1,41 @@
+﻿@model CreateViewModel
+
+@{
+    ViewData["Title"] = "Agregar empleado";
+}
+
+<div class="card">
+    <div class="card-header">
+        <h2 class="text-center">Crear empleado</h2>
+    </div>
+
+    <div class="card-body">
+        <form class="form" asp-action="Create" asp-controller="Employees"
+        enctype="multipart/form-data" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="mb-3">
+                <label class="form-label">Nombre: </label>
+                <input type="text" asp-for="Name" class="form-control" autocomplete="off"/>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Telefono: </label>
+                <input type="text" asp-for="Phone" class="form-control" autocomplete="off"/>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Foto: </label>
+                <input type="file" asp-for="Image" class="form-control"/>
+            </div>
+
+            <button type="submit" class="btn btn-success col-5 offset-1">
+                Crear
+            </button>
+
+            <a class="btn btn-danger col-5" asp-action="Index" asp-controller="Employees">
+                Cancelar
+            </a>
+        </form>
+    </div>
+</div>
