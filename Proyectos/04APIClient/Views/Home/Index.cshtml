@@ -1,8 +1,24 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h3 class="text-success">
+    @ViewBag.Message
+</h3>
+
+<form asp-action="Upload" asp-controller="Home"
+class="form" method="post" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label class="form-label">Descripcion: </label>
+        <input type="text" class="form-control" name="description" autocomplete="off"/>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Documento: </label>
+        <input type="file" class="form-control" name="file"/>
+    </div>
+
+    <button class="btn btn-success col-6 offset-3">
+        Guardar
+    </button>
+</form>
