@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04APIToUploadDocuments", "0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04APIClient", "04APIClient\04APIClient.csproj", "{B405E83A-40AA-4C4C-A17A-E3E857A27A2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-HireAndForget", "05-HireAndForget\05-HireAndForget.csproj", "{877326FA-78A9-46EA-AF4B-32C1891CC626}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-HireAndForget", "05-HireAndForget\05-HireAndForget.csproj", "{877326FA-78A9-46EA-AF4B-32C1891CC626}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06RutasDinamicas", "06RutasDinamicas\06RutasDinamicas.csproj", "{396F2C6E-DBF6-487A-92F5-8C76F37AE6D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{877326FA-78A9-46EA-AF4B-32C1891CC626}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{877326FA-78A9-46EA-AF4B-32C1891CC626}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{877326FA-78A9-46EA-AF4B-32C1891CC626}.Release|Any CPU.Build.0 = Release|Any CPU
+		{396F2C6E-DBF6-487A-92F5-8C76F37AE6D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{396F2C6E-DBF6-487A-92F5-8C76F37AE6D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{396F2C6E-DBF6-487A-92F5-8C76F37AE6D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{396F2C6E-DBF6-487A-92F5-8C76F37AE6D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
