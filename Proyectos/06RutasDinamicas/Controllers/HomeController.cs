@@ -20,8 +20,30 @@ namespace _06RutasDinamicas.Controllers {
             return View();
         }
 
+        [HttpGet]
+        public IActionResult Profile(string profileUser) {
+            var users = new List<string> {
+                "cesar", "liz", "lucy", "hector", "thaily"
+            };
+            
+            if (!users.Contains(profileUser)) {
+                return NotFound();
+            }
+
+            return View("Profile", profileUser);
+        }
+
+        [HttpGet]
+        public IActionResult NotFoundPage() {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error() {
+        public IActionResult Error(int statusCode) {
+            if (statusCode == 404) {
+                return View(nameof(NotFoundPage));
+            }
+
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
